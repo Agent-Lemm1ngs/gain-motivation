@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-    <script src="https://cdn.tailwindcss.com"></script>
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gain Motivation</title>
   <link rel="stylesheet" href="./tailwind.css">
+  <script src="./javascript.js"></script>
 </head>
 <body>
   <div class="flex h-screen w-full justify-center bg-gray-50/[.8] p-5">
@@ -18,7 +18,7 @@
     <div class="flex flex-col-reverse md:flex-row w-full justify-center gap-5 rounded-lg border border-gray-100 p-5">
       <div class="flex flex-col gap-2 text-center md:text-start">
         <h1 class="text-5xl font-extrabold">The Heading Of <span class="highlight">Lost</span> Motivation</h1>
-        <button class="w-full rounded-lg border border-green-600 bg-green-500 p-2 font-bold text-white outline-none duration-75 hover:scale-[101%] hover:bg-green-600 active:scale-[99%] active:bg-green-700 focus:outline focus:outline-green-500 ">Gain Motivation</button>
+        <button class="w-full rounded-lg border border-green-600 bg-green-500 p-2 font-bold text-white outline-none duration-75 hover:scale-[101%] hover:bg-green-600 active:scale-[99%] active:bg-green-700 focus:outline focus:outline-green-500 " onclick="#gainMotivation">Gain Motivation</button>
       </div>
       <div class="flex h-[200px] w-full select-none items-center justify-center">
         <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Disappointed%20Face.png" class="h-52 w-52" alt="" />
@@ -50,16 +50,49 @@
       
       <iframe height="700px" src="https://www.youtube.com/embed/ZEd8FMNlozs?si=LLEPaFYwkChNF4oc&amp;start=49"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"  class="border rounded-lg shadow-2xl w-full h-96"></iframe>
     </div>
-  <div class="scroll-container w-full bg-green-500 h-full flex flex-row -rotate-1 rounded-lg border border-green-600 p-4 mt-2 items-center overflow-hidden">
+  <div class="scroll-container w-full bg-green-500 h-full flex flex-row -rotate-1 rounded-lg border border-green-600 p-6 text-xl mt-2 items-center overflow-hidden">
   <div class="scrolling-text-wrapper flex flex-row gap-1">
-    <h1 class="scrolling-text uppercase font-bold text-white">METHODS TO GET MOTIVATION FAST 2024 UPDATED. NO VERIFICATION. LEGIT</h1>
-    <h1 class="scrolling-text uppercase font-bold text-white">METHODS TO GET MOTIVATION FAST 2024 UPDATED. NO VERIFICATION. LEGIT</h1>
+    <h1 class="scrolling-text uppercase font-bold text-green-50">METHODS TO GET MOTIVATION FAST 2024 UPDATED. NO VERIFICATION. LEGIT</h1>
+    <h1 class="scrolling-text uppercase font-bold text-green-50">METHODS TO GET MOTIVATION FAST 2024 UPDATED. NO VERIFICATION. LEGIT</h1>
   </div>
 </div>
 
+    <div class="flex flex-col w-full justify-center gap-5 rounded-lg border border-gray-200 bg-gray-100 p-5 " id="#progressMotivation">
+      <h1 class="text-2xl font-bold">Your Motivation Level</h1>
+      <!-- arrow here :D -->
+      
+      <progress  class="[&::-webkit-progress-bar]:rounded [&::-webkit-progress-value]:rounded  h-8  [&::-webkit-progress-bar]:bg-slate-300 shadow-2xl w-full [&::-webkit-progress-value]:bg-green-400 [&::-moz-progress-bar]:bg-green-500 [&::-webkit-progress-value]:transition-all [&::-webkit-progress-value]:duration-100"  max="100" value="5" id="progressBar"></progress>
+      <button class="w-full rounded-lg border border-green-600 bg-green-500 p-2 font-bold text-white outline-none duration-75 hover:scale-[101%] hover:bg-green-600 active:scale-[99%] active:bg-green-700 focus:outline focus:outline-green-500 uppercase" onclick="upgrade_motivation();" >I am a fighter and not a quitter</button>
+      
+
+
+    </div>
+
+     <div class="flex flex-col">
+       <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Astonished%20Face.png" alt="Astonished Face" width="100" height="100" class="mx-auto" />
+     <h1 class="text-gray-500 text-center">my specially curated tips for motivation have just arrived!</h1>
+     </div>
+      <div class="flex flex-col w-full justify-center gap-2 rounded-lg border-2 border-gray-200 border-spacing-8 bg-gray-50 p-5 items-center border-dashed h-full " id="#progressMotivation">
+        <div class="text-center">
+           <h1 class="text-3xl font-bold">How to Gain Motivation</h1>
+      <p class="text-gray-500">from your local guru of motivation master</p>
+        </div>
+     
+      <div class="bg-gray-100 min-h-40 flex items-center justify-center h-full w-full border p-2">
+        <div class="flex flex-col  gap-1 items-center text-center">
+        <span id="quoteNumber" class="text-2xl text-green-500 font-extrabold">1</span>
+        <p class="text-2xl" id="quoteText"> Stare at the wall until you are motivated.</p>
+      </div>
+      </div>
+      <div class="flex flex-row h-10 w-full gap-2">
+        <button class="w-full rounded-lg border border-green-600 bg-green-500 p-2 font-bold text-white outline-none duration-75 hover:scale-[101%] hover:bg-green-600 active:scale-[99%] active:bg-green-700 focus:outline focus:outline-green-500 uppercase" onclick="change_quote('left')">Previous</button>
+        <button class="w-full rounded-lg border border-green-600 bg-green-500 p-2 font-bold text-white outline-none duration-75 hover:scale-[101%] hover:bg-green-600 active:scale-[99%] active:bg-green-700 focus:outline focus:outline-green-500 uppercase" onclick="change_quote('right')">next</button>
+      </div>
+      
 
     <div class="w-full text-center">
       <p class="text-gray-400">more coming soon to satisfy your lost motivation</p>
+    </div>
     </div>
 
     <div class="w-full bg-gray-100 rounded-full p-2 flex justify-between items-center text-gray-600">
