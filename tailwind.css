@@ -484,6 +484,10 @@ video {
 .top-12 {
   top: 3rem;
 }
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -493,11 +497,17 @@ video {
 .hidden {
   display: none;
 }
+.h-10 {
+  height: 2.5rem;
+}
 .h-32 {
   height: 8rem;
 }
 .h-52 {
   height: 13rem;
+}
+.h-8 {
+  height: 2rem;
 }
 .h-96 {
   height: 24rem;
@@ -511,6 +521,9 @@ video {
 .h-screen {
   height: 100vh;
 }
+.min-h-40 {
+  min-height: 10rem;
+}
 .w-32 {
   width: 8rem;
 }
@@ -522,6 +535,11 @@ video {
 }
 .max-w-2xl {
   max-width: 42rem;
+}
+.border-spacing-8 {
+  --tw-border-spacing-x: 2rem;
+  --tw-border-spacing-y: 2rem;
+  border-spacing: var(--tw-border-spacing-x) var(--tw-border-spacing-y);
 }
 .-rotate-1 {
   --tw-rotate: -1deg;
@@ -569,9 +587,19 @@ video {
 .border {
   border-width: 1px;
 }
+.border-2 {
+  border-width: 2px;
+}
+.border-dashed {
+  border-style: dashed;
+}
 .border-gray-100 {
   --tw-border-opacity: 1;
   border-color: rgb(243 244 246 / var(--tw-border-opacity));
+}
+.border-gray-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 .border-green-600 {
   --tw-border-opacity: 1;
@@ -599,11 +627,11 @@ video {
 .p-2 {
   padding: 0.5rem;
 }
-.p-4 {
-  padding: 1rem;
-}
 .p-5 {
   padding: 1.25rem;
+}
+.p-6 {
+  padding: 1.5rem;
 }
 .px-5 {
   padding-left: 1.25rem;
@@ -656,9 +684,17 @@ video {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
 .text-gray-600 {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+.text-green-50 {
+  --tw-text-opacity: 1;
+  color: rgb(240 253 244 / var(--tw-text-opacity));
 }
 .text-green-500 {
   --tw-text-opacity: 1;
@@ -767,4 +803,31 @@ video {
   .md\:text-start {
     text-align: start;
   }
+}
+.\[\&\:\:-moz-progress-bar\]\:bg-green-500::-moz-progress-bar {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+}
+.\[\&\:\:-webkit-progress-bar\]\:rounded::-webkit-progress-bar {
+  border-radius: 0.25rem;
+}
+.\[\&\:\:-webkit-progress-bar\]\:bg-slate-300::-webkit-progress-bar {
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+.\[\&\:\:-webkit-progress-value\]\:rounded::-webkit-progress-value {
+  border-radius: 0.25rem;
+}
+.\[\&\:\:-webkit-progress-value\]\:bg-green-400::-webkit-progress-value {
+  --tw-bg-opacity: 1;
+  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
+}
+.\[\&\:\:-webkit-progress-value\]\:transition-all::-webkit-progress-value {
+  -webkit-transition-property: all;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.\[\&\:\:-webkit-progress-value\]\:duration-100::-webkit-progress-value {
+  transition-duration: 100ms;
 }
